@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Demo Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="display-3">Welcome to Our Demo Page</h1>
+            <p class="lead">A simple demonstration of Bootstrap, CSS, and JavaScript</p>
+            <button class="btn btn-light btn-lg" onclick="showAlert()">Click Me!</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Introduction Section -->
+        <section id="home" class="mb-5">
+            <h2 class="section-title">Introduction</h2>
+            <p class="text-muted">
+                This is a demo page showcasing various HTML elements styled with Bootstrap 5, 
+                custom CSS, and enhanced with JavaScript functionality. Below you'll find examples 
+                of text formatting, tables, lists, and interactive elements.
+            </p>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="about" class="mb-5">
+            <h2 class="section-title">Feature Cards</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Design</h5>
+                            <p class="card-text">Built with Bootstrap 5 grid system for perfect responsiveness across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern UI</h5>
+                            <p class="card-text">Clean and modern user interface with smooth animations and transitions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 card-hover">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Elements</h5>
+                            <p class="card-text">JavaScript-powered interactions for enhanced user experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lists Section -->
+        <section id="services" class="mb-5">
+            <h2 class="section-title">Service Lists</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Unordered List</h4>
+                    <ul class="styled-list">
+                        <li>Web Development</li>
+                        <li>Mobile Applications</li>
+                        <li>UI/UX Design</li>
+                        <li>Cloud Services</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Ordered List</h4>
+                    <ol class="styled-list">
+                        <li>Plan your project</li>
+                        <li>Design the interface</li>
+                        <li>Develop the solution</li>
+                        <li>Test thoroughly</li>
+                        <li>Deploy to production</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table Section -->
+        <section class="mb-5">
+            <h2 class="section-title">Data Table</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Laptop Pro</td>
+                            <td>Electronics</td>
+                            <td>$1,299.99</td>
+                            <td><span class="badge bg-success">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Wireless Mouse</td>
+                            <td>Accessories</td>
+                            <td>$29.99</td>
+                            <td><span class="badge bg-success">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>USB-C Hub</td>
+                            <td>Accessories</td>
+                            <td>$49.99</td>
+                            <td><span class="badge bg-warning">Low Stock</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Mechanical Keyboard</td>
+                            <td>Peripherals</td>
+                            <td>$149.99</td>
+                            <td><span class="badge bg-danger">Out of Stock</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Monitor 27"</td>
+                            <td>Electronics</td>
+                            <td>$399.99</td>
+                            <td><span class="badge bg-success">In Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Alert Section -->
+        <section class="mb-5">
+            <h2 class="section-title">Alerts</h2>
+            <div class="alert alert-primary" role="alert">
+                <strong>Info:</strong> This is a primary alert with important information.
+            </div>
+            <div class="alert alert-success" role="alert">
+                <strong>Success:</strong> Your operation was completed successfully!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <strong>Warning:</strong> Please review your input before proceeding.
+            </div>
+        </section>
+
+        <!-- Counter Section (Interactive) -->
+        <section id="contact" class="mb-5">
+            <h2 class="section-title">Interactive Counter</h2>
+            <div class="card">
+                <div class="card-body text-center">
+                    <h3>Click Counter</h3>
+                    <p class="display-4" id="counter">0</p>
+                    <button class="btn btn-primary" onclick="incrementCounter()">Increment</button>
+                    <button class="btn btn-secondary" onclick="resetCounter()">Reset</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Demo Page. All rights reserved.</p>
+            <p class="mb-0">Built with Bootstrap, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
